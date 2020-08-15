@@ -5,6 +5,9 @@ import { saveMessage } from '../_actions/message_actions';
 import Message from './Sections/Message';
 import { List, Icon, Avatar } from 'antd';
 import Card from "./Sections/Card";
+import Spinner from '../spinner_Animation_Loading/spinner.component';
+
+
 function Chatbot() {
     const dispatch = useDispatch();
     const messagesFromRedux = useSelector(state => state.message.messages)
@@ -61,8 +64,6 @@ function Chatbot() {
             }
 
             dispatch(saveMessage(conversation))
-
-
         }
 
     }
@@ -145,17 +146,10 @@ function Chatbot() {
                 </List.Item>
             </div>
         }
-        
-
-
 
         // template for card message 
 
-
-
-
     }
-
     const renderMessage = (returnedMessages) => {
 
         if (returnedMessages) {

@@ -3,9 +3,6 @@ const router = express.Router();
 const diagflowController = require('../Controllers/diagFlow.controller');
 const intentController = require('../Controllers/allIntents.controller');
 
-// We will make two routes 
-
-
 // Text Query Route
 router.post('/textQuery', diagflowController.textQuery )
 

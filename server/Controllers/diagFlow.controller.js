@@ -1,6 +1,7 @@
 const dialogflow = require('dialogflow');
 require('dotenv').config({ path: './server/config.env'});
 
+// Extracting Values From Config.env File
 const projectId = process.env.googleProjectID;
 const sessionId = process.env.dialogFlowSessionID;
 const languageCode = process.env.dialogFlowSessionLanguageCode;
@@ -10,8 +11,8 @@ const sessionClient = new dialogflow.SessionsClient();
 const sessionPath = sessionClient.sessionPath(projectId, sessionId);
 
 exports.eventQuery = async (req, res) => {
-    //We need to send some information that comes from the client to Dialogflow API 
-    // The text query request.
+    //We need no some information from the client to Dialogflow API 
+    // The Event query request.
     const request = {
         session: sessionPath,
         queryInput: {
@@ -49,12 +50,16 @@ exports.textQuery = async (req, res) => {
         },
     };
 
-    // Send request and log result
+    try{
+        // Send request and log result
     const responses = await sessionClient.detectIntent(request);
-    console.log('Detected intent');
+    //console.log('Detected intent');
     const result = responses[0].queryResult;
     //console.log(`Query: ${result.queryText}`);
     //console.log(`Response: ${result.fulfillmentText}`);
 
     res.send(result)
+    }catch(err){
+        console.log(err)
+    }
 }

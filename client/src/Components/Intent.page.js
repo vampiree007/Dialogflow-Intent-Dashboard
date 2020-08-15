@@ -4,6 +4,7 @@ import {MenuOutlined} from '@ant-design/icons';
 import Sidebar from './Sidebar/sidebar.component';
 import IntentDetail from './Intent_Details/intentDetail.component';
 import IntentExtras from './intentExtras/intentExtras.component';
+import Spinner from '../spinner_Animation_Loading/spinner.component'
 import './intent.styles.css';
 const Agent = require('../Assets/agent.png');
 
@@ -47,7 +48,7 @@ const IntentPage = () => {
             </div>
         )
     }else{
-        return(<div>loading...</div>)
+        return(<Spinner/>)
     }
 }
 

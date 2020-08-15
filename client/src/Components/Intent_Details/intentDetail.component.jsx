@@ -2,6 +2,7 @@ import React from 'react';
 import './intentDetail.styles.css';
 import {Link} from 'react-router-dom';
 import DetailGenerator from './IntentGenerator/allArrayIntents.component';
+import Spinner from '../../spinner_Animation_Loading/spinner.component';
 
 
 const IntentDetail = ({intent}) => {
@@ -26,7 +27,7 @@ const IntentDetail = ({intent}) => {
         )
     }else{
         return(
-            <div>loading..</div>
+            <Spinner/>
         )
     }
 }

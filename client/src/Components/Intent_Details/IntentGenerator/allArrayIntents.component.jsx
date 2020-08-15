@@ -1,6 +1,7 @@
 import React from 'react';
 import './singleDetail.styles.css';
-import {CaretDownFilled} from '@ant-design/icons'
+import {CaretDownFilled} from '@ant-design/icons';
+import Spinner from '../../../spinner_Animation_Loading/spinner.component';
 
 const DetailGenerator = ({intent}) => {
 
@@ -63,6 +64,10 @@ const DetailGenerator = ({intent}) => {
 
                 {IntentBlockGenerator(parameters, 'parameters')}  
             </div>
+        )
+    }else{
+        return(
+            <Spinner />
         )
     }
 }
