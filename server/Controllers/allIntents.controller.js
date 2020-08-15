@@ -1,8 +1,6 @@
 const dialogflow = require('dialogflow');
-const config = require('../config/keys');
 
 // Instantiates clients
-const intentsClient = new dialogflow.IntentsClient();
 const client = new dialogflow.v2.IntentsClient();
 // Iterate over all elements.
 const formattedParent = client.projectAgentPath('agent-black-pqeh');

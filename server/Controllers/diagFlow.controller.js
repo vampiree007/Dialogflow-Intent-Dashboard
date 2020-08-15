@@ -1,9 +1,9 @@
 const dialogflow = require('dialogflow');
-const config = require('../config/keys');
+require('dotenv').config({ path: './server/config.env'});
 
-const projectId = config.googleProjectID
-const sessionId = config.dialogFlowSessionID
-const languageCode = config.dialogFlowSessionLanguageCode
+const projectId = process.env.googleProjectID;
+const sessionId = process.env.dialogFlowSessionID;
+const languageCode = process.env.dialogFlowSessionLanguageCode;
 
 // Create a new session
 const sessionClient = new dialogflow.SessionsClient();
