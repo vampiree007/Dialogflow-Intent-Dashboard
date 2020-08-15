@@ -5,7 +5,6 @@ import { saveMessage } from '../_actions/message_actions';
 import Message from './Sections/Message';
 import { List, Icon, Avatar } from 'antd';
 import Card from "./Sections/Card";
-import Spinner from '../spinner_Animation_Loading/spinner.component';
 
 
 function Chatbot() {

@@ -48,7 +48,7 @@ const IntentPage = () => {
             </div>
         )
     }else{
-        return(<Spinner/>)
+        return(<div><Spinner/></div>)
     }
 }
 
