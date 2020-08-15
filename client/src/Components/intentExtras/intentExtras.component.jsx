@@ -16,7 +16,7 @@ const IntentExtras = (props) => {
         
         return (
             <div className="intent_extras">
-                    <div className="top_heading">Extras</div>
+                    <div className="top_heading extra_heading">Extras</div>
     
                     <RenderDetail title={'Intent Path'} value={name}/>
                     <RenderDetail title={'ML Disabled'} value={mlDisabled}/>

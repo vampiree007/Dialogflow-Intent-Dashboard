@@ -39,10 +39,22 @@
     background-color: rgb(58, 58, 58);
     color: #fff;
 }
+.flex_box{
+    display: flex;
+    justify-content: space-between;
+}
+.flex_box div{
+    width: 50%;
+}
+.indicator{
+    margin-left: 15px;
+}
 .auto_height{
     height: auto;
 }
-
+.rotate{
+    transform: rotate(180deg);
+}
 @media (max-width:650px){
     .single_detail{
         padding: 0 20px;

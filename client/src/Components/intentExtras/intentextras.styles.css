@@ -10,6 +10,7 @@
     line-height: 78px;
     font-weight: 500;
     text-transform: uppercase;
+    position: relative;
 }
 
 .intent_extras .intent_extras_details{
@@ -33,7 +34,10 @@
         padding-bottom: 50px;
     }
     .intent_extras .top_heading{
-        padding: 0 20px;
-        position: relative;
+        padding: 0 0px;
+        font-size: 16px;
+        border-bottom: 6px solid teal;
+        display: inline-block;
+        margin-left: 20px;
     }
 }

@@ -1,11 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import {MenuOutlined} from '@ant-design/icons';
-import {Link} from 'react-router-dom';
 import Sidebar from './Sidebar/sidebar.component';
 import IntentDetail from './Intent_Details/intentDetail.component';
 import IntentExtras from './intentExtras/intentExtras.component';
-import './intent.css';
+import './intent.styles.css';
 const Agent = require('../Assets/agent.png');
 
 const IntentPage = () => {
@@ -44,7 +43,7 @@ const IntentPage = () => {
                     <IntentDetail intent={activeIntent} />
                     <IntentExtras intent={activeIntent} />
                 </div>
-                
+
             </div>
         )
     }else{

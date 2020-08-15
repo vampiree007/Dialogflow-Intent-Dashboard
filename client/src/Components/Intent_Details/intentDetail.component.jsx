@@ -1,11 +1,11 @@
 import React from 'react';
 import './intentDetail.styles.css';
 import {Link} from 'react-router-dom';
-import DetailGenerator from './DetailGenerator/all_detail.component';
+import DetailGenerator from './IntentGenerator/allArrayIntents.component';
 
 
 const IntentDetail = ({intent}) => {
-    
+
     if(intent){
         return (
             <div className="intent_detail">
