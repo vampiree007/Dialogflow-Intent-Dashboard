@@ -1,0 +1,57 @@
+.sidebar{
+    width: 260px;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #fff;
+}
+.sidebar .top_heading{
+    padding: 0 25px;
+    height: 78px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: .6px solid #ddd;
+}
+.sidebar .top_heading .logo img{
+    width: 55px;
+    margin-top: 11px;
+}
+.sidebar .top_heading .name{
+    font-size: 20px;
+    line-height: 78px;
+    font-weight: 600;
+}
+.intent_list{
+    margin-top: 18px;
+}
+.intent_list .list_item{
+    height: 38px;
+    color: #2B313F;
+    font-size: 14px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.intent_list .list_item:first-child{
+    border-bottom: .6px solid #ddd;
+    margin-bottom: 25px;
+}
+.intent_list .list_item span{
+    background-color:#039ae5b0;
+    color: azure;
+    padding: 1px 10px;
+    border-radius: 1.5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+@media (max-width:650px){
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: -270px;
+        z-index: 999;
+    }
+    .toggleSidebar{
+        left: 0 !important;
+    }
+}

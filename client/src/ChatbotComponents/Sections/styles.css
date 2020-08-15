@@ -1,0 +1,27 @@
+.ant-list-item-meta-content{
+    overflow-x: hidden !important;
+}
+.material_shadow{
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+}
+.lines_image{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -3;
+}
+.lines_image img{
+    height: 700px;
+}
+.chatbox_main{
+    background-image: url('../../Assets/lines.png');
+}
+
+@media (max-width:650px){
+    .message_container{
+        width: 90% !important;
+    }
+    .robot_image{
+        display: none;
+    }
+}

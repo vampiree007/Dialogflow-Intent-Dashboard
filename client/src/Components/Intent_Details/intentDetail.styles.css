@@ -1,0 +1,59 @@
+.intent_detail{
+    width: 56%;
+}
+.intent_detail .top_heading{
+    height: 78px;
+    border-bottom: .6px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.intent_detail .top_heading .name{
+    font-size: 20px;
+    line-height: 78px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.intent_detail .top_heading span{
+    display: inline-block;
+    background-color: #039BE5;
+    color: aliceblue;
+    height: 35px;
+    width: 90px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 21px;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+}
+
+
+
+@media (max-width:650px){
+    .intent_detail{
+        width: 100%;
+    }
+    .intent_detail .top_heading{
+        height: 78px;
+        padding: 0 20px;
+    }
+    .intent_detail .top_heading .name{
+        font-size: 16px;
+        position: relative;
+    }
+    .intent_detail .top_heading .name::after{
+        position: absolute;
+        content:"";
+        height: 6px;
+        width: 70px;
+        background-color: teal;
+        bottom: 0;
+        left: 0;
+    }
+}

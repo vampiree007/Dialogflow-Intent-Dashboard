@@ -1,0 +1,39 @@
+.intent_extras{
+    width: 25%;
+    border-left: .6px solid #ddd;
+}
+.intent_extras .top_heading{
+    height: 78px;
+    border-bottom: .6px solid #ddd;
+    font-size: 17px;
+    padding: 0 25px;
+    line-height: 78px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.intent_extras .intent_extras_details{
+    padding: 20px;
+    padding-bottom: 5px;
+}
+.intent_extras_details .name{
+    text-transform: capitalize;
+    font-size: 13px;
+}
+.intent_extras_details .input{
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    margin-top: 4px;
+}
+
+@media (max-width:650px){
+    .intent_extras{
+        width: 100%;
+        border-top: .9px solid #ddd;
+        padding-bottom: 50px;
+    }
+    .intent_extras .top_heading{
+        padding: 0 20px;
+        position: relative;
+    }
+}
